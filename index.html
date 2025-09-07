@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>学習支援ポータル</title>
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
-    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-    <link href="[https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap)" rel="stylesheet">
+    
+    <!-- ★★★ 見た目を整えるための最重要コードです ★★★ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- フォントを読み込むためのコードです -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
+        /* CSSのカスタムスタイルは変更ありません */
         body { font-family: 'Noto Serif JP', serif; background-color: #0a192f; color: #e6f1ff; }
         .nav-link { transition: all 0.3s ease; position: relative; padding-bottom: 8px; }
         .nav-link::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #ffd700; transition: width 0.3s ease; }
@@ -47,7 +53,7 @@
       // リクエストフォームの内容が送信されるメールアドレス
       "mailToAddress": "YOUR_EMAIL_HERE@example.com",
 
-      // 初回訪問時に表示するイントロ動画のURL（フェーズ4の方法で作成）
+      // 初回訪問時に表示するイントロ動画のURL
       // 不要な場合は、"" の中に何も入れないでください
       "introVideoUrl": "",
 
@@ -157,3 +163,4 @@
     </script>
 </body>
 </html>
+
